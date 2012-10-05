@@ -40,7 +40,13 @@
         CGColorSpaceRef space = CGColorSpaceCreateDeviceRGB();
 
         normalGradient = CGGradientCreateWithColors(
+
+#if __has_feature(objc_arc)
+                space, (__bridge CFArrayRef)normalGradientColors, locations);
+
+#else
             space, (CFArrayRef)normalGradientColors, locations);
+#endif
         CGColorSpaceRelease(space);
     }
 
@@ -61,9 +67,15 @@
         CGColorSpaceRef space = CGColorSpaceCreateDeviceRGB();
 
         highlightGradient =
-            CGGradientCreateWithColors(space,
-            (CFArrayRef)highlightGradientColors,
-            locations);
+            CGGradientCreateWithColors(
+
+#if __has_feature(objc_arc)
+                space, (__bridge CFArrayRef)highlightGradientColors, locations);
+
+#else
+            space, (CFArrayRef)highlightGradientColors, locations);
+#endif
+
         CGColorSpaceRelease(space);
     }
 
@@ -461,7 +473,7 @@
         self.strokeWeight = 0.0;
 
         if (self.normalGradientColors == nil) {
-            // [self useWhiteStyle];
+            [self useInitStyle];
         }
 
         [self setOpaque:NO];
@@ -494,13 +506,22 @@
 }                       /* resolveImageResource */
 
 #pragma mark -
+
 - (void)dealloc
 {
-    [normalGradientColors release];
-    [normalGradientLocations release];
-    [highlightGradientColors release];
-    [highlightGradientLocations release];
-    [strokeColor release];
+#if __has_feature(objc_arc)
+        normalGradientColors        = nil;
+        normalGradientLocations     = nil;
+        highlightGradientLocations  = nil;
+        strokeColor = nil;
+
+#else
+        [normalGradientColors release];
+        [normalGradientLocations release];
+        [highlightGradientColors release];
+        [highlightGradientLocations release];
+        [strokeColor release];
+#endif
 
     if (normalGradient != NULL) {
         CGGradientRelease(normalGradient);
@@ -510,7 +531,10 @@
         CGGradientRelease(highlightGradient);
     }
 
-    [super dealloc];
+#if __has_feature(objc_arc)
+#else
+        [super dealloc];
+#endif
 }   /* dealloc */
 
 @end
