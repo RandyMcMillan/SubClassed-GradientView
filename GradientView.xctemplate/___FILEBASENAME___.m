@@ -138,8 +138,8 @@
 
 - (void)useInitStyleImage
 {
-    // for buttons
-    // [self setImage:[UIImage imageNamed:[[self class] resolveImageResource:@"GradientView.bundle/image1"]] forState:UIControlStateNormal];
+    // for buttons/whatever
+    // [self setImage:[UIImage imageNamed:[[self class] resolveImageResource:@"___FILEBASENAME___.bundle/image1"]] forState:UIControlStateNormal];
 }
 
 #pragma mark useYouTubeUIBar
@@ -184,8 +184,8 @@
 
 - (void)useSecondaryStyleImage
 {
-    // for buttons
-    // [self setImage:[UIImage imageNamed:[[self class] resolveImageResource:@"GradientView.bundle/image2"]] forState:UIControlStateNormal];
+    // for buttons/whatever
+    // [self setImage:[UIImage imageNamed:[[self class] resolveImageResource:@"___FILEBASENAME___.bundle/image2"]] forState:UIControlStateNormal];
 }
 
 #pragma mark -
