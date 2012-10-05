@@ -20,4 +20,9 @@ Drop into:
  
     ~/Library/Developer/Xcode/Templates/File Templates/
 
-![image](https://raw.github.com/RandyMcMillan/CDVPlugin/master/ScreenShot.png)
+![image](https://raw.github.com/RandyMcMillan/SubClassed-GradientView/master/ScreenShot2.png)
+
+SubClass UIView and add Gradient styling.
+You can also add other properties and this is a great start custom UI styling for iOS
+
+![image](https://raw.github.com/RandyMcMillan/SubClassed-GradientView/master/ScreenShot.png)
