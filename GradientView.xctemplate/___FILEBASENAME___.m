@@ -128,7 +128,8 @@
         nil];
 
     NSMutableArray *colors2 = [NSMutableArray arrayWithCapacity:3];
-    color = [UIColor colorWithRed:0.922 green:0.918 blue:0.929 alpha:0.500];
+    color = [UIColor colorWithRed:0.922 green:0.918 blue:0.929 alpha:0.100]; // creates subtle pressed gradient by exposing color underneath
+
     [colors2 addObject:(id)[color CGColor]];
     color = [UIColor colorWithRed:0.922 green:0.918 blue:0.929 alpha:1.000];
     [colors2 addObject:(id)[color CGColor]];
