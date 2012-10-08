@@ -113,12 +113,12 @@
 - (void)useInitStyle
 {
     NSMutableArray  *colors = [NSMutableArray arrayWithCapacity:3];
-    UIColor         *color  = [UIColor clearColor];
+    UIColor         *color  = [UIColor colorWithRed:0.922 green:0.918 blue:0.929 alpha:1.000];
 
     [colors addObject:(id)[color CGColor]];
-    color = [UIColor colorWithRed:0.995 green:0.995 blue:0.995 alpha:1.0];
+    color = [UIColor colorWithRed:0.922 green:0.918 blue:0.929 alpha:1.000];
     [colors addObject:(id)[color CGColor]];
-    color = [UIColor colorWithRed:0.956 green:0.956 blue:0.955 alpha:1.0];
+    color = [UIColor colorWithRed:0.922 green:0.918 blue:0.929 alpha:1.000];
     [colors addObject:(id)[color CGColor]];
     self.normalGradientColors       = colors;
     self.normalGradientLocations    = [NSMutableArray arrayWithObjects:
@@ -128,11 +128,11 @@
         nil];
 
     NSMutableArray *colors2 = [NSMutableArray arrayWithCapacity:3];
-    color = [UIColor colorWithRed:0.692 green:0.692 blue:0.691 alpha:1.0];
+    color = [UIColor colorWithRed:0.922 green:0.918 blue:0.929 alpha:0.500];
     [colors2 addObject:(id)[color CGColor]];
-    color = [UIColor colorWithRed:0.995 green:0.995 blue:0.995 alpha:1.0];
+    color = [UIColor colorWithRed:0.922 green:0.918 blue:0.929 alpha:1.000];
     [colors2 addObject:(id)[color CGColor]];
-    color = [UIColor colorWithRed:0.83 green:0.83 blue:0.83 alpha:1.0];
+    color = [UIColor colorWithRed:0.922 green:0.918 blue:0.929 alpha:1.000];
     [colors2 addObject:(id)[color CGColor]];
     self.highlightGradientColors    = colors2;
     self.highlightGradientLocations = [NSMutableArray arrayWithObjects:
@@ -142,11 +142,11 @@
         nil];
 
     self.cornerRadius   = 5.0f;
-    self.strokeColor    = [UIColor clearColor];
+    self.strokeColor    = [UIColor darkGrayColor];
     self.strokeWeight   = 0.1f;
-    // [self setTitleColor:[UIColor darkGrayColor] forState:UIControlStateNormal];//For NavBars//Buttons//etc
-    // [self setTitleColor:[UIColor darkGrayColor] forState:UIControlStateHighlighted];//For NavBars//Buttons//etc
-}   /* useInitStyle */
+    [self setTitleColor:[UIColor darkGrayColor] forState:UIControlStateNormal];         // For NavBars//Buttons//etc
+    [self setTitleColor:[UIColor darkGrayColor] forState:UIControlStateHighlighted];    // For NavBars//Buttons//etc
+}                                                                                       /* useInitStyle */
 
 - (void)useInitStyleImage
 {
