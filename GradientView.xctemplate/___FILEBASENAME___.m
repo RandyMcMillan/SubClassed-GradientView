@@ -156,6 +156,7 @@
 {
 	// for buttons/whatever
     [self setImage:[UIImage imageNamed:[[self class] resolveImageResource:@"___FILEBASENAME___.bundle/image1"]] forState:UIControlStateNormal];
+	// [self setImage:[UIImage imageNamed:[[self class] resolveImageResource:@"___FILEBASENAME___.bundle/image1"]] forState:UIControlStateNormal];
 }
 
 #pragma mark useYouTubeUIBar
