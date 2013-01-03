@@ -56,6 +56,8 @@
 @property (nonatomic, retain) UIColor   *strokeColor;
 
 - (void)useInitStyle;
+- (void)useInitStyleImage;
 - (void)useSecondaryStyle;
+- (void)useSecondaryStyleImage;
 
 @end
