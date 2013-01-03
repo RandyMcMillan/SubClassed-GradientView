@@ -23,7 +23,8 @@
 #import <QuartzCore/QuartzCore.h>
 #import <CoreGraphics/CoreGraphics.h>
 
-@interface ___FILEBASENAMEASIDENTIFIER___ : UIView // Subclass buttons/navbars/etc
+//@interface ___FILEBASENAMEASIDENTIFIER___ : UIView // Subclass buttons/navbars/etc
+@interface ___FILEBASENAMEASIDENTIFIER___ : UIButton // Subclass buttons/navbars/etc
 {
     // These two arrays define the gradient that will be used
     // when the button is in UIControlStateNormal
