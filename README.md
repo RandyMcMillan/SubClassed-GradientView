@@ -1,21 +1,28 @@
-#Subclassed UIView - GradientView
-
-
-Create
-
-    ~/Library/Developer/Xcode/Templates/File Templates/ 
-
-if it doesn't exist
-
-
-Drop into: 
+SubClassed-GradientView
+===
+Xcode template
+---
+Add to your Xcode templates to quickly create custom gradient views.
  
-    ~/Library/Developer/Xcode/Templates/File Templates/
+
+    https://github.com/RandyMcMillan/SubClassed-GradientView.git
+
+
+USAGE
+---
+
+Command Line:
+
+    $ mkdir ~/Library/Developer/Xcode/Templates/File\ Templates
+    $ cd ~/Library/Developer/Xcode/Templates/File Templates/
+    $ git clone https://github.com/RandyMcMillan/SubClassed-GradientView.git
+ 
 
 ![image](https://raw.github.com/RandyMcMillan/SubClassed-GradientView/master/ScreenShot2.png)
 
-SubClass UIView and add Gradient styling.
-You can also add other properties and this is a great start custom UI styling for iOS
+When on an Xcode project select <COMMMAND+n> and select GradientView from template options.
+
+_With some work you can recreate popular iOS App UI stylings._
 
 ![image](https://raw.github.com/RandyMcMillan/SubClassed-GradientView/master/ScreenShot.png)
 
