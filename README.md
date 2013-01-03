@@ -22,6 +22,8 @@ Command Line:
 
 When on an Xcode project select <COMMMAND+n> and select GradientView from template options.
 
+![image](https://raw.github.com/RandyMcMillan/SubClassed-GradientView/master/ScreenShot3.png)
+
 _With some work you can recreate popular iOS App UI stylings._
 
 ![image](https://raw.github.com/RandyMcMillan/SubClassed-GradientView/master/ScreenShot.png)
